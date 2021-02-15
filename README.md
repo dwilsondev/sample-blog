@@ -13,4 +13,5 @@ Database connect is set up as the following in `system/core/model.php`
 * database username: root
 * database password: no password
 
+## IMPORTANT
 Project folder name must be named sample-blog or you will need to change RewriteBase in the .htaccess.
