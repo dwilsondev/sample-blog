@@ -33,7 +33,7 @@
 
         public function getPosts() {
 
-            $sql = "SELECT * FROM `posts` WHERE `type` = 'post'";
+            $sql = "SELECT * FROM `posts` WHERE `type` = 'post' ORDER BY id DESC";
             $statement = $this->connect->prepare($sql);
             $statement->execute();
             $results = $statement->fetchAll();
