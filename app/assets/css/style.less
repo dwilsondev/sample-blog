@@ -1,0 +1,166 @@
+body {
+    color: #212121;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+p, li {
+    font-size: 1.3em;
+    line-height: 2;
+}
+
+small {
+    font-size: 1em;
+}
+
+.wrapper {
+    width: 75%;
+    margin: auto;
+}
+
+header {
+    background: url('../img/notebook.webp') no-repeat;
+    background-size: 100% 100%;
+    padding: 7%;
+
+    h1 {
+        width: 47%;
+        margin: auto;
+    }
+}
+
+footer {
+    a:hover {
+        color: #90caf9;
+    }
+}
+
+header, footer {
+    a {
+        text-decoration: none;
+    }
+}
+
+nav {
+    height: auto;
+
+    a {
+        color: #90caf9;
+        font-size: 2em;
+        margin: 30px;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+}
+
+main {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    min-height: 600px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        order: 1;
+        flex: 7;
+        padding: 2%;
+    }
+
+    aside {
+        order: 2;
+        flex: 3;
+        padding: 2%;
+    }
+}
+
+.post {
+    color: #212121;
+    margin-bottom: 30px;
+}
+
+.post, #post {
+    .by-line {
+        display: block;
+    }
+}
+
+#contact-form {
+    textarea {
+        min-height: 200px;
+    }
+}
+
+/**
+
+    Materialize Form CSS
+
+*/
+/* label color */
+.input-field label {
+    color: #2196f3;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #2196f3 + 10;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #2196f3;
+    box-shadow: 0 1px 0 0 #2196f3;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid green;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid crimson;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #2196f3;
+}
+
+@media (max-width: 860px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    header {
+        h1 {
+            width: 95%;
+        }
+    }
+    nav {
+        a {
+            font-size: 1.5em;
+            margin: 4%;
+            white-space: nowrap;
+        }
+    }
+
+    main {
+        .wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
