@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <base href="<?php echo DOMAIN; ?>sample-blog/" target="_blank" />
+    <base href="<?php echo DOMAIN.ROOT_FOLDER; ?>" target="_blank" />
 
     <title><?php echo $data['page']['title']; ?></title>
 
