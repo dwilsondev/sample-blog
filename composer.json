@@ -11,10 +11,7 @@
         }
     ],
     "require": {
-        "php": "^7.2.5|^8.0",
-        "twig/twig": "^3.0",
-		"league/plates": "^3.4",
-		"mustache/mustache": "~2.5"
+        "php": "^7.2.5|^8.0"
     },
     "version": "2.0.2",
     "license": [
